@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movies App</title>
+  <link rel="stylesheet" href="css/movie.css">
+</head>
+<body>
+<div class="container">
+    <header>
+      <h1>Movie Search</h1>
+      <div class="search_area">
+        <input type="text" id="searchInput" placeholder="Search for a movie...">
+        <button id="searchBtn" aria-label="Search recipes"><img height="35" width="35" src="img/search-icon.png"></button>
+      </div>
+    </header>
+
+    <section id="moviesContainer"></section>
+
+    <section id="modal" class="modal">
+      <div class="modal_content">
+        <span id="closeModal">&times;</span>
+        <div id="movieDetails"></div>
+      </div>
+    </section>
+</div>
+<script src="js/movie.js"></script>
+</body>
+</html>

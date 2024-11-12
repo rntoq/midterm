@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="css/weather.css">
+</head>
+<body>
+<div class="container">
+    <header>
+      <h1>Search by city</h1>
+      <div class="search_area">
+        <input type="text" id="searchInput" placeholder="Search for a city...">
+        <button id="searchBtn" aria-label="Search recipes"><img height="35" width="35" src="img/search-icon.png"></button>
+        <ul id="suggestions"></ul>
+      </div>
+    </header>
+
+    <section id="">
+      <div class="unit_toggle">
+        <button id="locationBtn">Get Weather</button>
+        <button class="toggle_btn" onclick="toggleUnit('metric')">°C</button>
+        <button class="toggle_btn" onclick="toggleUnit('imperial')">°F</button>
+      </div>
+      <div id="currentWeather"></div>
+
+      <div id="forecast"></div>
+    </section>
+
+
+</div>
+<script src="js/weather.js"></script>
+</body>
+</html>
